@@ -2,10 +2,12 @@
 let jogador, vencedor = null;
 let jogadorSelecionado = document.getElementById('jogador-selecionado')
 let vencedorSelecionado = document.getElementById('vencedor-selecionado')
-let quadrados = document.getElementsByClassName('quadrado');
 mudarJogador('X');
 
 function escolherQuadrado(id){
+    if(vencedor !== null){
+        return;
+    }
     let quadrado = document.getElementById(id);
     if(quadrado.innerHTML !== '-'){
         return;
