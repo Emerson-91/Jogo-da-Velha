@@ -84,6 +84,8 @@ function checaVencedor(){
 function mudarVencedor(quadrado){
     vencedor = quadrado.innerHTML;
     vencedorSelecionado.innerHTML = vencedor;
+    vencedorSelecionado.style.color = '#00cc33';
+
 }
 
 function mudacorQuadrado(quadrado1, quadrado2, quadrado3){
